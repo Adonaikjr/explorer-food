@@ -69,7 +69,7 @@ export function Home(){
                         
                         { <Card title='Salada Molla  >' img={ <img src={molla}/>} p='Tomates, coentro, pepino, cebola roxa Frescos e temperados' cash='R$ 19,97'value='1'/>} 
                         
-                         { <Card title='Spaguetti Gambe  >' img={ <img src={torrada}/>} p='Massa fresca com camarões e pesto' cash='R$ 79,97'value='1'/>} 
+                         { <Card title='Spaguetti Gambe  >' img={ <img src={torrada}/>} p='Massa fresca com camarões e pesto batata lorem lorem' cash='R$ 79,97'value='1'/>} 
 
                          { <Card title='Torradas de Parma >' img={ <img src={masktwo}/>} p='Presunto de parma e rúcula em um pão com fermentação natural' cash='R$ 25,97'value='1'/>}   
             

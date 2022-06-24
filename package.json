@@ -13,6 +13,8 @@
     "react-dom": "^18.0.0",
     "react-elastic-carousel": "^0.11.5",
     "react-router-dom": "^6.3.0",
+    "sqlite": "^4.1.1",
+    "sqlite3": "^5.0.8",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {

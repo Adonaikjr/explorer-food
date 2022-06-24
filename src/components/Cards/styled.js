@@ -6,6 +6,24 @@ export const Container = styled.div`
   background: ${({theme}) => theme.COLORS.BACKGROUND_MENU};
   border: 1px solid ${({theme}) => theme.COLORS.BORDER_CARD};
   border-radius: 8px;
+  height: 33rem;
+  border:solid 1px #53a7ea;
+  
+  :hover
+{
+
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        transform: scale(1.030);
+}
+
+box-shadow:
+                1px 1px #53a7ea,
+                2px 2px #53a7ea,
+                3px 3px #53a7ea;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+        
 
   img{
     position:relative;

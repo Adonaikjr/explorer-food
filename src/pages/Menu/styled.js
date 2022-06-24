@@ -25,6 +25,7 @@ img{
     width: 80rem;
     margin-top:150px;
     background-color:${({theme}) => theme.COLORS.BACKGROUND};
+    
     >div{
         display: flex;
         flex-direction: column;
@@ -32,7 +33,9 @@ img{
         width: 50%;
         height: 90%;
         border: none;
-        background-color: ${({theme}) => theme.COLORS.BACKGROUND};;
+        background-color: ${({theme}) => theme.COLORS.BACKGROUND};
+        border:solid 1px #53a7ea;
+        
     }
 }
 

@@ -10,6 +10,22 @@ section{
     top: 126px;
     margin-left: -40rem;
 
+    animation:topdown 1s;
+    @keyframes topdown {
+    0%{
+        opacity:0;
+        transform:translateY(0);
+    }
+    
+    100%{
+        opacity:1;
+        transform: translateY(90);
+    }
+}
+
+
+
+
   }
   max-width: 85.5rem;
   margin: 0 auto;
@@ -48,10 +64,22 @@ text-align: left;
   width: 50%;
   height: 100%;
   justify-content: center;
+  animation:downtop 1s;
 }
 }
 
+@keyframes downtop {
 
+0%{
+    opacity:0;
+    transform:translateX(200px);
+}
+
+100%{
+    opacity:1;
+    transform: translateX(0);
+}
+}
 `;
 
 export const Content = styled.div`
@@ -78,7 +106,7 @@ export const Items = styled.div`
 display: flex;
   gap: 27px;
   margin-top:42px;
-  height: 33.25rem;
+  height: 34rem;
 
 
 `

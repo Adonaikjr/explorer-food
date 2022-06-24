@@ -22,6 +22,7 @@ export function MenuOne(){
             { <img src={ravanello} width={500} height={500} />  }
              <Card title='Salada Ravanello >' p='Rabanetes, folhas verdes e molho agridoce salpicados com gergelim' temp={<img src={imgtemp1}/>} tempone={<img src={imgtemp2}/>} temptwo={<img src={imgtemp3}/>}  cash='R$ 49,97' tempfor={<img src={imgtemp4}/>} value='1'/>
              </div>
+             
             <Footer/>
         </Container>
     )
