@@ -130,6 +130,7 @@ text-align: left;
   }
 
   button{
+      margin-top: 100px;
       align-self: flex-end;
       background:${({theme}) =>theme.COLORS.BORDER_INPUT};
       border:solid 1px ${({theme}) => theme.COLORS.WHITE};
