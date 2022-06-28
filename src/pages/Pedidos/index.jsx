@@ -15,7 +15,7 @@ export function Pedidos(){
             <Header/>
             </div>
 
-            <User_request status={<img src={ballred} width={30}/>} title='Pendente' code='000002' details='1 x Salada Radish, 1 x Torradas de Parma, 1 x Chá de Canela, 1 x Suco de Maracujá' timeday='20/05 às 18h00' />
+            <User_request status={<img src={ballred} width={10}/>} title='Pendente' code='000002' details='1 x Salada Radish, 1 x Torradas de Parma, 1 x Chá de Canela, 1 x Suco de Maracujá' timeday='20/05 às 18h00' />
             <div>
                 
             <Footer/>
