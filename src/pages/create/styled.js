@@ -1,13 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-
-height: 98vh;
-width: 100%;
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-align-items: center;
 h1{
     font-family: Poppins;
 font-size: 32px;
@@ -19,27 +12,27 @@ text-align: center;
 }
 
 
-  div{
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0em;
-    text-align: left;
-    border-radius: 1rem;
-    background-color: ${({theme}) => theme.COLORS.BACKGROUND_CREATE};
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 29.75rem;
-    height: 37.5rem;
-    
-  }
   button{
     margin-top: 32px;
   }
 `;
+
+export const Content = styled.div`
+height: 100vh;
+
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap:wrap;
+`
+export const Article = styled.div`
+  
+
+`
+export const Main = styled.div`
+
+height:37.5rem;
+`
 
 export const Section = styled.section`
     display: flex;
@@ -50,11 +43,30 @@ export const Section = styled.section`
 `
 
 export const Form = styled.form`
-
+    border-radius: 16px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    gap: 14px;
+    align-items: center;
+    justify-content:space-between;
+    
+    height:37.5rem;
+    background-color: ${({theme}) => theme.COLORS.BACKGROUND_CREATE};
+    >h1{
+      text-align: center;
+      width:100%;
+      margin-top: 4rem;
+      
+    }
+
+    h4{
+      margin-left:4rem;
+      margin-bottom:12px;
+    }
+
     input{
+      margin-right: 4rem;
+        margin-left:4rem;
         width: 21.75rem;
         height: 3rem;
         border: 1px solid ${({theme})=>theme.COLORS.BORDER_INPUT};
@@ -62,6 +74,23 @@ export const Form = styled.form`
         background: transparent;
         padding-left: 8px;
         color: ${({theme}) => theme.COLORS.WHITE};
+    }
+
+    button{
+      margin-left:4rem;
+      margin-right:4rem;
+      
+    }
+
+    >p{
+      width:100%;
+ 
+      text-align: center;
+     margin-bottom: 4rem;
+     >a{
+      text-decoration: none;
+      color: ${({theme}) => theme.COLORS.WHITE} ;
+     }
     }
 
 `

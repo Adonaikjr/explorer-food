@@ -2,7 +2,7 @@
 
 export default {
     COLORS: {
-      BACKGROUND_CREATE: "rgba(0, 17, 25, 1)",
+      BACKGROUND_CREATE: "#001119;",
       BACKGROUND: "rgba(0, 10, 15, 1)",
 
       BACKGROUND_MENU :"rgba(0, 0, 0, 0.32);",

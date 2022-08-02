@@ -12,6 +12,6 @@ export default createGlobalStyle`
         padding: 0 auto;
         background: ${({theme}) => theme.COLORS.BACKGROUND};
         color:${({theme}) => theme.COLORS.WHITE};
-        max-width: 85.5rem;
+        max-width: 100%;
     }
 `
