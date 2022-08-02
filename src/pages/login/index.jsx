@@ -9,16 +9,16 @@ export function Login(){
         <Container>
             <Content>
                 <Article>
-            <Section>
-                <img src={polygon}/>
-                <h1>Food explorer</h1>
-            </Section>
-            </Article>
+                    <Section>
+                        <img src={polygon}/>
+                        <h1>Food explorer</h1>
+                    </Section>
+                </Article>
             
                 <Form>
                 <h1>Faça o login</h1>
                 
-                    <Input type='email' title='E-mai' placeholder='Exemple@exemple.com'/>
+                    <Input type='email' title='E-mail' placeholder='Exemple@exemple.com'/>
 
                     <Input type='password' title='Senha' placeholder='Minimo 6 carácteres'/>
 

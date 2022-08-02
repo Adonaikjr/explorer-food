@@ -19,12 +19,12 @@ export const Container = styled.button`
 
   border-color: red;
   color: #fff;
-  background-image: -webkit-linear-gradient(45deg, red 50%, transparent 50%);
+  background-image: -webkit-linear-gradient(50deg, red 50%, transparent 50%);
   background-image: linear-gradient(45deg, red 50%, transparent 50%);
   background-position: 100%;
   background-size: 400%;
-  -webkit-transition: background 300ms ease-in-out;
-  transition: background 300ms ease-in-out;
+  -webkit-transition: 300ms ease-in-out;
+  transition:  500ms ease-in-out;
 
 :hover {
   background-position: 0;

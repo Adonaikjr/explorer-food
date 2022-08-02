@@ -8,7 +8,7 @@ margin-top: 100px;
   height: 6.5rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 
 h2{

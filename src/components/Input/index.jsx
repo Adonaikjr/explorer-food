@@ -1,10 +1,13 @@
 import { Container } from './styled';
 
-export function Input({ icon:Icon, title, ...rest }){
+export function Input({ icon:Icon, title,children, ...rest }){
     return(
         <Container>
              <h4>{title}</h4>
-                <input { ...rest}/>
+             {children}
+              { Icon && <Icon size={20}/> }
+                <input {...rest}/>
+                
         </Container>
     )
 }

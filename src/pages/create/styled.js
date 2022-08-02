@@ -60,8 +60,15 @@ export const Form = styled.form`
     }
 
     h4{
+      margin-bottom:8px;
       margin-left:4rem;
-      margin-bottom:12px;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 8px;
     }
 
     input{
@@ -74,12 +81,24 @@ export const Form = styled.form`
         background: transparent;
         padding-left: 8px;
         color: ${({theme}) => theme.COLORS.WHITE};
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+
     }
 
     button{
       margin-left:4rem;
       margin-right:4rem;
-      
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
     }
 
     >p{
@@ -90,6 +109,12 @@ export const Form = styled.form`
      >a{
       text-decoration: none;
       color: ${({theme}) => theme.COLORS.WHITE} ;
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
      }
     }
 

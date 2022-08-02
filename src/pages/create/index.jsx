@@ -14,7 +14,6 @@ export function Create(){
                 <h1>Food explorer</h1>
             </Section>
             </Article>
-            
                 <Form>
                 <h1>Crie sua conta</h1>
                     <Input type='text' title='Seu nome' placeholder='Exemplo: Joao Pedro'/>
