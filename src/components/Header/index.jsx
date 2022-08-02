@@ -19,9 +19,7 @@ export function Header(){
                 </>
             </Favorites>
             <Label>
-                <Input  placeholder='Pratos do dia?🔍' >
-                    <BsSearch/>
-                </Input>
+                <Input  placeholder='Pratos do dia?🔍' icon={BsSearch}/>
             </Label>
             <User>
                 <Button title='Meu pedido'>  

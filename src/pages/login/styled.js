@@ -60,16 +60,6 @@ export const Form = styled.form`
       
     }
 
-    h4{
-      margin-left:4rem;
-      font-family: Roboto;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 16px;
-      letter-spacing: 0em;
-      text-align: left;
-      margin-bottom: 8px;
-    }
 
     input{
       margin-right: 4rem;
@@ -114,4 +104,22 @@ export const Form = styled.form`
      }
     }
 
+`
+export const Fieldset = styled.div`
+
+display:flex;
+flex-direction: column;
+h4{
+      margin-bottom: 1.5rem;
+      margin-top:1rem;
+      margin-left:4rem;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
+     
+    }
+ 
 `

@@ -1,5 +1,5 @@
-import { Container, Content, Items } from "./styled";
-import img1 from '../../img/img1.svg';
+import { Container, Content, Items, Section, BoxA, ContentBoxA } from "./styled";
+
 //components
 
 import { Card } from "../../components/Cards";
@@ -24,6 +24,8 @@ import imgbeb8 from '../../img/Mask group-11.png'
 import Carousel from 'react-elastic-carousel'
 import {useState} from 'react'
 import { Footer } from "../../components/Footer";
+import { BsJustify } from "react-icons/bs";
+import { TranslateImg } from "../../components/TranslateImg";
 //end
 
 export function Home(){
@@ -51,13 +53,14 @@ export function Home(){
         <Container>
             <Header/>
                
-            <section>
-            <img src={img1}/>
-                    <div>
-                        <h1>Sabores inigualáveis</h1>
-                        <p>Sinta o cuidado com ingredientes selecionados</p>
-                    </div>
-            </section>
+            <Section>
+                <BoxA>
+                    <TranslateImg/>
+                        <ContentBoxA>
+                            
+                        </ContentBoxA>
+                </BoxA>
+            </Section>
 
             <Content>
                 <h1>Pratos principais</h1>

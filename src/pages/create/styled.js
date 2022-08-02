@@ -49,7 +49,6 @@ export const Form = styled.form`
     flex-direction: column;
     align-items: center;
     justify-content:space-between;
-    
     height:37.5rem;
     background-color: ${({theme}) => theme.COLORS.BACKGROUND_CREATE};
     >h1{
@@ -59,17 +58,7 @@ export const Form = styled.form`
       
     }
 
-    h4{
-      margin-bottom:8px;
-      margin-left:4rem;
-      font-family: Roboto;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 16px;
-      letter-spacing: 0em;
-      text-align: left;
-      margin-bottom: 8px;
-    }
+
 
     input{
       margin-right: 4rem;
@@ -87,7 +76,7 @@ export const Form = styled.form`
         line-height: 16px;
         letter-spacing: 0em;
         text-align: left;
-
+       
     }
 
     button{
@@ -118,4 +107,24 @@ export const Form = styled.form`
      }
     }
 
+`
+export const Fieldset = styled.div`
+
+display:flex;
+flex-direction: column;
+h4{
+  
+     
+      margin-bottom: 1rem;
+      margin-top:2rem;
+      margin-left:4rem;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
+     
+    }
+ 
 `

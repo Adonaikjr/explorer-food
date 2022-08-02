@@ -2,84 +2,9 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 
-section{
-  >img{
-    position: absolute;
-    opacity: 0.8;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-    top: 126px;
-    margin-left: -40rem;
-
-    animation:topdown 1s;
-    @keyframes topdown {
-    0%{
-        opacity:0;
-        transform:translateY(0);
-    }
-    
-    100%{
-        opacity:1;
-        transform: translateY(90);
-    }
-}
 
 
 
-
-  }
-  max-width: 85.5rem;
-  margin: 0 auto;
-  margin-top:163px;
-  padding: 0 auto;
-  background: linear-gradient(180deg, #091E26 0%, #00131C 100%);
-  border-radius: 8px;
-  height: 16.25rem;
-border-radius: 8px;
-text-align: right;
-display: flex;
-justify-content: end;
-
->div{
-h1{
-  font-family: Poppins;
-font-size: 40px;
-font-weight: 500;
-line-height: 56px;
-letter-spacing: 0em;
-text-align: left;
-
-}
-p{
-  font-family: Poppins;
-font-size: 16px;
-font-weight: 400;
-line-height: 22px;
-letter-spacing: 0em;
-text-align: left;
-
-}
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-  height: 100%;
-  justify-content: center;
-  animation:downtop 1s;
-}
-}
-
-@keyframes downtop {
-
-0%{
-    opacity:0;
-    transform:translateX(200px);
-}
-
-100%{
-    opacity:1;
-    transform: translateX(0);
-}
-}
 `;
 
 export const Content = styled.div`
@@ -109,4 +34,64 @@ display: flex;
   height: 34rem;
 
 
+`
+
+export const Section = styled.div`
+  border:solid green;
+  max-width: 100%;
+  margin-top:163px;
+  height: 16.25rem;
+  border-radius: 8px;
+  animation:downtop 1s;
+  display: flex;
+  justify-content: space-around;
+  
+`
+
+
+
+export const BoxA = styled.div`
+  background: linear-gradient(180deg, #091E26 0%, #00131C 100%);
+  border: solid blue;
+  width: 70%;
+  height: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  
+  /*img{
+    opacity: 0.8;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    animation:topdown 1s;
+    @keyframes topdown {
+    0%{
+        opacity:0;
+        transform:translateY(0);
+    }
+    
+    100%{
+        opacity:1;
+        transform: translateY(90);
+    }
+}
+  }
+
+@keyframes downtop {
+
+0%{
+    opacity:0;
+    transform:translateX(200px);
+}
+
+100%{
+    opacity:1;
+    transform: translateX(0);
+}
+}
+*/
+
+`
+export const ContentBoxA = styled.div`
+  border:solid;
+  width: 100px;
+  height:100px;
 `

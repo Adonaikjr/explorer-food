@@ -1,4 +1,4 @@
-import { Container, Section, Form, Content, Article, Main } from "./styled";
+import { Container, Section, Form, Content, Article, Fieldset } from "./styled";
 import polygon from '../../img/Polygon.svg';
 import { Button } from "../../components/Button";
 import { Link } from "react-router-dom";
@@ -16,12 +16,15 @@ export function Create(){
             </Article>
                 <Form>
                 <h1>Crie sua conta</h1>
-                    <Input type='text' title='Seu nome' placeholder='Exemplo: Joao Pedro'/>
-                    
-                    <Input type='email' title='E-mail' placeholder='Exemple@exemple.com'/>
+                    <Fieldset>
+                       <h4>Seu nome</h4>
+                        <Input type='text' placeholder='Exemplo: Joao Pedro'/>
+                        <h4>E-mail</h4>
+                        <Input type='email' title='E-mail' placeholder='Exemple@exemple.com'/>
+                        <h4>Senha</h4>
+                        <Input type='password' title='Senha' placeholder='Minimo 6 carácteres'/>
 
-                    <Input type='password' title='Senha' placeholder='Minimo 6 carácteres'/>
-
+                    </Fieldset>
                     <Button title='Criar Conta'>
                         <Link to='/home'/>
                     </Button>

@@ -1,4 +1,4 @@
-import { Container, Section, Form, Content, Article, Main } from "./styled";
+import { Container, Section, Form, Content, Article, Fieldset } from "./styled";
 import polygon from '../../img/Polygon.svg';
 import { Button } from "../../components/Button";
 import { Link } from "react-router-dom";
@@ -17,11 +17,12 @@ export function Login(){
             
                 <Form>
                 <h1>Faça o login</h1>
-                
-                    <Input type='email' title='E-mail' placeholder='Exemple@exemple.com'/>
-
-                    <Input type='password' title='Senha' placeholder='Minimo 6 carácteres'/>
-
+                    <Fieldset>
+                        <h4>E-mail</h4>
+                        <Input type='email' title='E-mail' placeholder='Exemple@exemple.com'/>
+                        <h4>Senha</h4>
+                        <Input type='password' title='Senha' placeholder='Minimo 6 carácteres'/>
+                    </Fieldset>
                     <Button title='Entrar'/>
 
                     <p>

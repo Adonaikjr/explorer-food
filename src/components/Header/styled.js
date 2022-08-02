@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.header`
-
 margin: 0 auto;
 padding: 0 auto;
-  max-width: 85.5rem;
+  max-width: 100%;
   height: 100%;
   padding: 10px;
   background-color: ${({theme}) =>theme.COLORS.BACKGROUND_INP_HEADER};
@@ -59,8 +58,10 @@ text-align: left;
      }
 
 `
-export const Label = styled.label`
+export const Label = styled.div`
+display:flex;
 
+flex-direction: row;
 
   input{
     padding-left: 12px;
