@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+display:flex;
+flex-direction:column;
+justify-content: center;
+max-width:1880px;
 
-
+margin:0 auto;
+padding: 0 auto;
 
 
 `;
@@ -60,36 +65,7 @@ export const BoxA = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   
-  /*img{
-    opacity: 0.8;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-    animation:topdown 1s;
-    @keyframes topdown {
-    0%{
-        opacity:0;
-        transform:translateY(0);
-    }
-    
-    100%{
-        opacity:1;
-        transform: translateY(90);
-    }
-}
-  }
 
-@keyframes downtop {
-
-0%{
-    opacity:0;
-    transform:translateX(200px);
-}
-
-100%{
-    opacity:1;
-    transform: translateX(0);
-}
-}
-*/
 
 `
 export const ContentBoxA = styled.div`
@@ -104,7 +80,7 @@ export const Title = styled.div`
   display:flex;
   flex-direction: column;
   text-align: center;
-  h1{
+ p , h1{
     font-family: Poppins;
 font-size: 32px;
 font-weight: 500;
@@ -112,6 +88,49 @@ line-height: 45px;
 letter-spacing: 0em;
 text-align: center;
 color: ${({theme}) => theme.COLORS.GRAY_80};
+
+  overflow: hidden; 
+  border-right: 0.15em solid orange; 
+  white-space: nowrap; 
+  margin: 0 auto;
+  letter-spacing: 0.15em; 
+  animation: typing 3s steps(120, end) alternate infinite,
+    blink-caret .5s step-end infinite, rotateText 7s ease alternate infinite;
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+@keyframes rotateText {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(10deg) scale(1.5) translateX(10px) skewY(10deg);
+  }
+  75% {
+    transform: rotate(-10deg) scale(0.8) translateX(-10px) skewY(-10deg);
+  }
+  100% {
+    transform: rotate(5deg) scale(1.2) translateX(5px) skewY(5deg);
+  }
+}
   }
   p{
     font-family: Poppins;

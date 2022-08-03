@@ -51,8 +51,7 @@ export function Home(){
 
     return(
         <Container>
-            <Header/>
-               
+            <Header/>          
             <Section>
                 <BoxA>
                     <TranslateImg/>

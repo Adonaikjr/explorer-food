@@ -10,4 +10,33 @@ export const Container = styled.div`
   background-position: center;
   display:flex;
   margin-top: -150px;
-`;
+    opacity: 0.8;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    animation:topdown 1s;
+    @keyframes topdown {
+    0%{
+        opacity:0;
+        transform:translateY(0);
+    }
+    
+    100%{
+        opacity:1;
+        transform: translateY(90);
+    }
+}
+  
+
+@keyframes downtop {
+
+0%{
+    opacity:0;
+    transform:translateX(200px);
+}
+
+100%{
+    opacity:1;
+    transform: translateX(0);
+}
+}
+
+`

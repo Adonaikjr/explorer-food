@@ -7,12 +7,10 @@ export default createGlobalStyle`
         box-sizing: border-box;
     }
     body{
-       
-        height: 100vh;
-        margin: 0 auto;
-        padding: 0 auto;
+     
+        height: 100%;
         background: ${({theme}) => theme.COLORS.BACKGROUND};
         color:${({theme}) => theme.COLORS.WHITE};
-        max-width: 100%;
+        
     }
 `
