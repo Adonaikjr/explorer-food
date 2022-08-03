@@ -26,7 +26,7 @@ export function Login(){
                     <Button title='Entrar'/>
 
                     <p>
-                        <Link to='/'>Criar conta</Link>
+                        <Link to='/home'>Criar conta</Link>
                     </p>
                 </Form>
                 
