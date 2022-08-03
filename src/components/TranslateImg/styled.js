@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import img1 from '../../img/img1.svg';
 export const Container = styled.div`
-  width: 39.53rem;
+  width: 35rem;
   height: 25.43rem;
  z-index:1;
-  border:solid red;
+  opacity:0.8;
   background-image: url(${img1});
   background-repeat: no-repeat ;
   background-position: center;

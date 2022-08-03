@@ -1,4 +1,4 @@
-import { Container, Content, Items, Section, BoxA, ContentBoxA } from "./styled";
+import { Container, Content, Items, Section, BoxA, ContentBoxA, Title} from "./styled";
 
 //components
 
@@ -57,7 +57,11 @@ export function Home(){
                 <BoxA>
                     <TranslateImg/>
                         <ContentBoxA>
-                            
+                            <Title>
+                                <h1>Sabores inigualáveis</h1>
+                                <p>Sinta o cuidado do preparo com ingredientes selecionados</p>
+                                
+                            </Title>
                         </ContentBoxA>
                 </BoxA>
             </Section>

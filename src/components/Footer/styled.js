@@ -4,21 +4,20 @@ export const Container = styled.footer`
 margin: 0 auto;
 padding: 0 auto;
 margin-top: 100px;
-  max-width: 85.5rem;
+  width:100%;
   height: 6.5rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  
 
 h2{
     font-family: Roboto;
 font-size: 25px;
 font-weight: 700;
 line-height: 29px;
-letter-spacing: 0em;
-text-align: left;
-
+width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,11 +25,13 @@ text-align: left;
         margin-right: 16px;
      }
 }
-
+p{
 font-family: Roboto;
 font-size: 16px;
 font-weight: 400;
 line-height: 26px;
-letter-spacing: 0em;
+
+width:100%;
 text-align: center;
+}
 `;
