@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import img1 from '../../img/img1.svg';
 export const Container = styled.div`
+border: solid;
   width: 35rem;
   height: 25.43rem;
  z-index:1;
@@ -9,7 +10,7 @@ export const Container = styled.div`
   background-repeat: no-repeat ;
   background-position: center;
   display:flex;
-  margin-top: -150px;
+  margin-top: -9.37rem;
     opacity: 0.8;
     transform: matrix(-1, 0, 0, 1, 0, 0);
     animation:topdown 1s;

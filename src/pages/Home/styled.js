@@ -5,7 +5,7 @@ display:flex;
 flex-direction:column;
 justify-content: center;
 max-width:1880px;
-
+align-items: center;
 margin:0 auto;
 padding: 0 auto;
 
@@ -14,7 +14,7 @@ padding: 0 auto;
 
 export const Content = styled.div`
 margin-top: 16px;
-  
+  width: 100%;
   display: flex;
   flex-direction: column;
   >h1{
@@ -42,9 +42,9 @@ display: flex;
 `
 
 export const Section = styled.div`
-  
-  max-width: 100%;
-  margin-top:163px;
+  border:solid;
+  width: 70rem;
+  margin-top:10.18rem;
   height: auto;
   border-radius: 8px;
   //animation:downtop 1s;
@@ -57,6 +57,8 @@ export const Section = styled.div`
 
 
 export const BoxA = styled.div`
+border:solid green;
+display: flex;
   background: linear-gradient(180deg, #091E26 0%, #00131C 100%);
   border-radius: 8px;
   width: 70%;
@@ -64,21 +66,25 @@ export const BoxA = styled.div`
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
-  
+  width: 70rem;
 
 
 `
 export const ContentBoxA = styled.div`
-
+border: solid red;
+width: 100%;
   margin-left: 2rem;
   display:flex;
   justify-content:center;
   align-items: center;
+  flex-wrap: wrap;
 `
 export const Title = styled.div`
 
   display:flex;
   flex-direction: column;
+justify-content: center;
+border: solid;
   text-align: center;
  p , h1{
     font-family: Poppins;
@@ -90,12 +96,12 @@ text-align: center;
 color: ${({theme}) => theme.COLORS.GRAY_80};
 
   overflow: hidden; 
-  border-right: 0.15em solid orange; 
+
   white-space: nowrap; 
   margin: 0 auto;
-  letter-spacing: 0.15em; 
-  animation: typing 3s steps(120, end) alternate infinite,
-    blink-caret .5s step-end infinite, rotateText 7s ease alternate infinite;
+
+ // animation: typing 3s steps(120, end) alternate infinite,
+   // blink-caret .5s step-end infinite, rotateText 7s ease alternate infinite;
 
 
 @keyframes typing {
@@ -107,30 +113,7 @@ color: ${({theme}) => theme.COLORS.GRAY_80};
   }
 }
 
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
-}
 
-@keyframes rotateText {
-  0% {
-    transform: rotate(0);
-  }
-  25% {
-    transform: rotate(10deg) scale(1.5) translateX(10px) skewY(10deg);
-  }
-  75% {
-    transform: rotate(-10deg) scale(0.8) translateX(-10px) skewY(-10deg);
-  }
-  100% {
-    transform: rotate(5deg) scale(1.2) translateX(5px) skewY(5deg);
-  }
-}
   }
   p{
     font-family: Poppins;
