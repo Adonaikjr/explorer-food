@@ -1,4 +1,4 @@
-import { Container, Content, Items, Section, BoxA, ContentBoxA, Title} from "./styled";
+import { Container, Content, Items, Section, Title} from "./styled";
 
 //components
 
@@ -53,26 +53,20 @@ export function Home(){
         <Container>
             <Header/>          
             <Section>
-                <BoxA>
-
-                    <TranslateImg/>
-                    </BoxA>    
-                            <Title>
-                                <h1>Sabores inigualáveis</h1>
-                                <p>Sinta o cuidado do preparo com ingredientes selecionados</p>
-                            </Title>
-                
+                <TranslateImg/>
+                    <Title>
+                        <h1>Sabores inigualáveis</h1>
+                        <p>Sinta o cuidado do preparo com ingredientes selecionados</p>
+                    </Title>
             </Section>
 
             <Content>
                 <h1>Pratos principais</h1>
                 <Carousel isRTL breakPoints={breakPoints} >
-
-                    {items.map((item) => (
-                    
+                {items.map((item) => (
                     <Items key={items} >
                         
-                        { <Card title='Salada Molla  >' img={ <img src={molla}/>} p='Tomates, coentro, pepino, cebola roxa Frescos e temperados' cash='R$ 19,97'value='1'/>} 
+                        { <Card title='Salada Molla  >' img={ <img src={molla}/>} p='Tomates, coentro, pepino, cebola roxa Frescos e temperados' cash='R$ 19,97'value='1' /> } 
                         
                          { <Card title='Spaguetti Gambe  >' img={ <img src={torrada}/>} p='Massa fresca com camarões e pesto batata lorem lorem' cash='R$ 79,97'value='1'/>} 
 
@@ -85,7 +79,7 @@ export function Home(){
                     )) }
                 </Carousel>
 
-                </Content>
+            </Content>
 
                 <Content>
                 <h1>Sobremesas</h1>

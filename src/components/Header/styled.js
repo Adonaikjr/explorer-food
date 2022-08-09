@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.header`
-
-  height: 100%;
+width:100%;
+  height: auto;
   padding: 10px;
   background-color: ${({theme}) =>theme.COLORS.BACKGROUND_INP_HEADER};
   display: flex;
@@ -13,6 +13,10 @@ export const Container = styled.header`
   height:2rem;
   width:3rem;
  
+}
+a{
+  text-decoration: none;
+  color: #fff;
 }
 gap:12px;
 
@@ -76,7 +80,9 @@ display:flex;
 
 export const User = styled.div`
 display: flex;
-
+a{
+  text-decoration: none;
+}
 
 `
 export const Favorites = styled.div`

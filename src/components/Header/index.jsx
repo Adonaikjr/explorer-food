@@ -7,12 +7,15 @@ import lupa from '../../img/lupa.svg'
 import { Input } from "../Input";
 import { BsSearch} from "react-icons/bs";
 import {IoExitOutline, MdOutlineRequestPage } from "react-icons/all";
+import { Link } from "react-router-dom";
 export function Header(){
     return(
         <Container>
-            <Logo>
-                <img src={polygon}/> Food explorer
-            </Logo>
+            <Link to='/home'>
+                <Logo>
+                    <img src={polygon}/> Food explorer
+                </Logo>
+            </Link>
             <Favorites>
                 <>
                 Meus Favoritos
@@ -22,11 +25,15 @@ export function Header(){
                 <Input  placeholder='Pratos do dia?🔍' icon={BsSearch}/>
             </Label>
             <User>
-                <Button title='Meu pedido'>  
-                <MdOutlineRequestPage/>
-                </Button>
+                <Link to='/pedidos'>
+                    <Button title='Meu pedido'>  
+                        <MdOutlineRequestPage/>
+                    </Button>
+                </Link>
             </User>
-            <IoExitOutline/>
+            <Link to='/'>
+                <IoExitOutline size={30}/>
+            </Link>
         </Container>
     )
 }

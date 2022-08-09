@@ -42,63 +42,38 @@ display: flex;
 `
 
 export const Section = styled.div`
-  border:solid;
-  width: 70rem;
+  //border:solid red;
+
   margin-top:10.18rem;
   height: auto;
   border-radius: 8px;
   //animation:downtop 1s;
   display: flex;
-  justify-content: center;
-
+  //justify-content: center;
+flex-wrap: wrap;
+background: linear-gradient(180deg, #091E26 0%, #00131C 100%);
   
 `
 
-
-
-export const BoxA = styled.div`
-border:solid green;
-display: flex;
-  background: linear-gradient(180deg, #091E26 0%, #00131C 100%);
-  border-radius: 8px;
-  width: 70%;
-  height: 100%;
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 70rem;
-
-
-`
-export const ContentBoxA = styled.div`
-border: solid red;
-width: 100%;
-  margin-left: 2rem;
-  display:flex;
-  justify-content:center;
-  align-items: center;
-  flex-wrap: wrap;
-`
 export const Title = styled.div`
 
   display:flex;
   flex-direction: column;
+  flex-wrap: wrap;
 justify-content: center;
-border: solid;
+//border: solid red;
   text-align: center;
+  width: 29.75rem;
  p , h1{
     font-family: Poppins;
 font-size: 32px;
 font-weight: 500;
 line-height: 45px;
-letter-spacing: 0em;
-text-align: center;
+//letter-spacing: 0em;
+//text-align: center;
 color: ${({theme}) => theme.COLORS.GRAY_80};
 
-  overflow: hidden; 
 
-  white-space: nowrap; 
-  margin: 0 auto;
 
  // animation: typing 3s steps(120, end) alternate infinite,
    // blink-caret .5s step-end infinite, rotateText 7s ease alternate infinite;

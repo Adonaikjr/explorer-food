@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import img1 from '../../img/img1.svg';
 export const Container = styled.div`
-border: solid;
+//border: solid;
   width: 35rem;
   height: 25.43rem;
  z-index:1;
